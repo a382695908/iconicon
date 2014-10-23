@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Yikyak</title>
+
+</head>
+
+<body>
+
+  <html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Yikyak</title>
+
+    <link href="http://code.ionicframework.com/1.0.0-beta.12/css/ionic.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0-beta.12/js/ionic.bundle.js"></script>
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <ion-nav-bar class="nav-title-slide-ios7 bar-royal">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+    <script id="templates/tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-royal">
+
+        <ion-tab title="Ana" icon="ion-home" href="#/tab/home">
+          <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Gözat" icon="ion-eye" href="#/tab/about">
+          <ion-nav-view name="about-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Ben" icon="ion-person" ui-sref="tabs.ben">
+          <ion-nav-view name="ben-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Daha" icon="ion-more" ui-sref="tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+      </ion-tabs>
+    </script>
+
+    <script id="templates/home.html" type="text/ng-template">
+      <ion-view title="Ana">
+        <ion-content class="padding">
+
+
+<div class="list">
+<div class="list card">
+
+
+  <a href="#/tab/facts"><div class="item item-body">
+
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">2 saat</a>
+      <a href="#" class="subdued">7 cevap</a>
+    </p>
+  </div> </a>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-chevron-up"></i>
+      Yukarı
+    </a>
+    <a class="tab-item" href="#">
+      
+      135
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chevron-down"></i>
+      Aşağı
+    </a>
+  </div>
+
+</div>
+<div class="list card">
+
+
+  <div class="item item-body">
+
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">2 saat</a>
+      <a href="#" class="subdued">7 cevap</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Yukarı
+    </a>
+    <a class="tab-item" href="#">
+      
+      135
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsdown"></i>
+      Aşağı
+    </a>
+  </div>
+
+</div>
+<div class="list card">
+
+
+  <div class="item item-body">
+
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">2 saat</a>
+      <a href="#" class="subdued">7 cevap</a>
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Yukarı
+    </a>
+    <a class="tab-item" href="#">
+      
+      135
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsdown"></i>
+      Aşağı
+    </a>
+  </div>
+
+</div>
+
+</div>
+
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts.html" type="text/ng-template">
+      <ion-view title="Facts">
+        <ion-content class="padding">
+
+        <div class="list list-inset">
+          <label class="item item-input">
+
+            <input type="text" row="3" placeholder="Paylaşmak güzeldir">
+          </label>
+        </div>
+
+          <p>Banging your head against a wall uses 150 calories an hour.</p>
+          <p>Dogs have four toes on their hind feet, and five on their front feet.</p>
+          <p>The ant can lift 50 times its own weight, can pull 30 times its own weight and always falls over on its right side when intoxicated.</p>
+          <p>A cockroach will live nine days without its head, before it starves to death.</p>
+          <p>Polar bears are left handed.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">More Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts2.html" type="text/ng-template">
+      <ion-view title="Also Factual">
+        <ion-content class="padding">
+
+          <p>111,111,111 x 111,111,111 = 12,345,678,987,654,321</p>
+          <p>1 in every 4 Americans has appeared on T.V.</p>
+          <p>11% of the world is left-handed.</p>
+          <p>1 in 8 Americans has worked at a McDonalds restaurant.</p>
+          <p>$283,200 is the absolute highest amount of money you can win on Jeopardy.</p>
+          <p>101 Dalmatians, Peter Pan, Lady and the Tramp, and Mulan are the only Disney cartoons where both parents are present and dont die throughout the movie.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Ana</a>
+            <a class="button icon ion-chevron-left" href="#/tab/facts"> Scientific Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/about.html" type="text/ng-template">
+      <ion-view title="Gözat">
+        <ion-content class="padding">
+
+        <div class="list">
+
+          <div class="item item-divider">
+            Gözde Okullar
+          </div>
+
+          <a class="item" href="#/tab/home">
+            Bilgi Üniversitesi <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/home">
+            İstanbul Universitesi <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/home">
+            Bahçeşehir Üniversitesi <i class="pull-right ion-chevron-right"></i>
+          </a>
+
+          <div class="item item-divider">
+            Diğer Okullar
+          </div>
+
+          <a class="item" href="#/tab/home">
+            Yeditepe Üniversitesi <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/home">
+            Butterfinger <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/navstack">
+            Butterfinger <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/navstack">
+            Butterfinger <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/navstack">
+            Butterfinger <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/navstack">
+            Butterfinger <i class="pull-right ion-chevron-right"></i>
+          </a>
+
+        </div>
+
+
+
+
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Tabs Nav Stack</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/nav-stack.html" type="text/ng-template">
+      <ion-view title="Tab Nav Stack">
+        <ion-content class="padding">
+          <p><img src="http://ionicframework.com/img/diagrams/tabs-nav-stack.png" style="width:100%"></p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/ben.html" type="text/ng-template">
+      <ion-view title="Ben">
+        <ion-content>
+
+
+        <div class="list card">
+
+
+          <div class="item item-image">
+            <img src="http://www.paulund.co.uk/wp-content/uploads/2012/01/google-map.jpg">
+          </div>
+
+        </div>
+
+        <div class="list card">
+
+          <a href="#/tab/home" class="item item-icon-left">
+            <i class="icon ion-home"></i>
+            Paylaşımlarım
+          </a>
+
+          <a href="#/tab/home" class="item item-icon-left">
+            <i class="icon ion-ios7-telephone"></i>
+            Cevaplarım
+          </a>
+
+          <a href="#/tab/home" class="item item-icon-left">
+            <i class="icon ion-wifi"></i>
+            En iyi paylaşımlarım
+          </a>
+
+        </div>
+
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/contact.html" type="text/ng-template">
+      <ion-view title="Daha Fazlası">
+        <ion-content>
+
+
+        <div class="list">
+
+          <div class="item item-divider">
+            En iyi paylaşımlar
+          </div>
+
+          <a class="item" href="#/tab/home">
+            Tüm zamanların en iyileri <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/home">
+            Etrafımdaki en iyiler <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#/tab/home">
+            Diğer en iyiler<i class="pull-right ion-chevron-right"></i>
+          </a>
+
+          <div class="item item-divider">
+            Diğer
+          </div>
+
+          <a class="item" href="#">
+            Kurallar ve Bilgi<i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#">
+            Bizi Paylaş <i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#">
+            Bizi Değerlendir<i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#">
+            İletişim<i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#">
+            Twitter da takip et<i class="pull-right ion-chevron-right"></i>
+          </a>
+          <a class="item" href="#">
+            Facebook ta takip et <i class="pull-right ion-chevron-right"></i>
+          </a>
+
+        </div>
+
+
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
